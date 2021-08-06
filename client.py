@@ -15,7 +15,7 @@ class app:
 		register_button = Button(root, text="Register", command=self.registerentry).pack() 
 	def loginentry(self):
 		loginwindow = Toplevel()
-		Label(loginwindow, text="User Name").pack()
+		Label(loginwindow, text="Username or Email").pack()
 		self.username = Entry(loginwindow)
 		self.username.pack()
 		Label(loginwindow, text="Password").pack()
@@ -24,7 +24,7 @@ class app:
 		Button(loginwindow, text="Login",command=self.login).pack()
 	def registerentry(self):
 		registerwindow = Toplevel()
-		Label(registerwindow, text="User Name").pack()
+		Label(registerwindow, text="Username").pack()
 		self.username = Entry(registerwindow)
 		self.username.pack()
 		Label(registerwindow, text="Email").pack()
